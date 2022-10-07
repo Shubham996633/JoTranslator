@@ -24,19 +24,43 @@ exchangeIcon.addEventListener('click', () => {
 })
 
 translateBtn.addEventListener('click', () => {
+    translator()
+})
+
+function translator(){
     let text = fromText.value,
     translateFrom = selectTag[0].value,
     translateTo = selectTag[1].value;
-    if(!text) return
+    if(!text){
+        const Toast = Swal.mixin({
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 1800,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+              toast.addEventListener('mouseenter', Swal.stopTimer)
+              toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+          })
+          
+          Toast.fire({
+            icon: 'info',
+            title: 'Seems The Input is Empty'
+          })
+          document.querySelector('.swal2-popup').style.background = '#1b1a1a'
+        document.querySelector('.swal2-popup').style.color = 'white' 
+        document.querySelector('.swal2-timer-progress-bar').style.background = 'rgb(102, 101, 101)'
+        return
+    }
     toText.setAttribute('placeholder', 'Translating...')
     let apiUrl = `https://api.mymemory.translated.net/get?q=${text}&langpair=${translateFrom}|${translateTo}&de=shubhammaurya996633@gmail.com`
     fetch(apiUrl).then(res => res.json()).then(data => {
-        console.log(data)
         toText.value = data.responseData.translatedText
         toText.setAttribute('placeholder', 'Translation')
 
     })
-})
+}
 
 icons.forEach(icon => {
     icon.addEventListener('click', ({target}) => {
