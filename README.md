@@ -8,7 +8,7 @@
 
 
 
-## To Visit Click Here : <a href = "#">JoTranslate</a>
+## To Visit Click Here : <a href = "#">JoTranslator</a>
 <br>
 
 ## Disclaimer   
