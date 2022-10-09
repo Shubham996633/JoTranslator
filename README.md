@@ -1,2 +1,2 @@
 # JoTranslator
-JoTranslator is Language Translator Based on HTML, CSS and JavaScript with Multi-Device Suppory
+JoTranslator is Language Translator Based on HTML, CSS and JavaScript with Multi-Device Support
