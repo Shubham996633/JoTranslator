@@ -8,9 +8,6 @@
 
 
 
-<<<<<<< Updated upstream
-## To Visit Click Here : <a href = "https://shubham996633.github.io/JoTranslator/">JoTranslate</a>
-=======
 ## To Visit Click Here : <a href = "#">JoTranslate</a>
 <br>
 
@@ -27,4 +24,3 @@
 Some-time there is a clash between API so By that reason JoTranslator can't  
 able to complete your desired request so please visit after Some-time upto that it will be resolved by The Developer
 If not resolved Then Drop a Mail here : ( <a href = "mailto:shubhammaurya996633+work@gmail.com"> Shubham_Maurya</a> )
->>>>>>> Stashed changes
