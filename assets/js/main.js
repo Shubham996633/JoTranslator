@@ -89,3 +89,42 @@ icons.forEach(icon => {
 })
 
 
+var widths = [0, 636, 3840];
+function resizeFns() {
+  if (window.innerWidth<widths[1]) {
+     
+      Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          confirmButtonColor: 'red',
+          
+          confirmButtonText: 'Close',
+          text: 'Your Screen Size must be greator than 636px to run the Todo',
+          footer: 'Please Try on a device whose width Greator than 636px '
+        }).then((result) => {
+          if (result.isConfirmed) {
+           
+            window.close()
+          }
+        })
+      
+
+      document.querySelector('.container').style.transform = 'scale(0)'
+     
+      
+
+    
+
+
+
+
+  }else{
+
+      document.querySelector('.container').style.transform = 'scale(1)'
+  }
+}
+
+window.onload = resizeFns;
+resizeFns();
+
+window.onresize = resizeFns
