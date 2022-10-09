@@ -1,5 +1,5 @@
 # JoTranslator
-### JoTranslator is Language Translator Based on HTML, CSS and JavaScript with Multi-Device Support
+### JoTranslator is Language Translator Based on HTML, CSS and JavaScript with Multi-Device Support (Min-Width: 636px)
 
 
 ## --> OverView
@@ -8,4 +8,4 @@
 
 
 
-## To Visit Click Here : <a href = "#">JoTranslate</a>
+## To Visit Click Here : <a href = "https://shubham996633.github.io/JoTranslator/">JoTranslate</a>
